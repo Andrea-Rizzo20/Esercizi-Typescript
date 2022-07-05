@@ -4,24 +4,36 @@
 
 // Add a type annotation to this variable that describes the object it contains.
 
-const countryPopulation = {
+const countryPopulation:object = {
     code: "NZ",
     population: 5_135_300,
 };
 
+interface Country  {
+    name:string;
+    code: string;
+    population: number
+}
+
 // Define a `Country` interface that describes the object in this variable.
 // Add the `Country` type as a type annotation for this variable.
 
-const countryData = {
+const countryData:Country = {
     name: "India",
     code: "IN",
     population: 1_352_642_280,
 };
 
+interface Currency {
+    name: string;
+    code:string;
+    symbol:string
+}
+
 // Define a `Currency` type alias that describes the object in this variable.
 // Add the `Currency` type as a type annotation for this variable.
 
-const currencyData = {
+const currencyData:Currency = {
     name: "Euro",
     code: "EUR",
     symbol: "€",
